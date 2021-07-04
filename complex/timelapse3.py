@@ -10,6 +10,7 @@ from os import system
 
 camera = PiCamera()
 camera.resolution = (1920, 1080)
+camera.start_preview(alpha=200)
 # my camera was flipped and upside down - this fixes that
 camera.vflip = True
 camera.hflip = True
